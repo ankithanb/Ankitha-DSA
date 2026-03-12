@@ -1,5 +1,5 @@
 package Array;
-o
+
 public class primeNumInRange {
     public static void main(String[] args)
     {
@@ -13,7 +13,7 @@ public class primeNumInRange {
             }
             for(int n = 2; n <= arr[i] / 2; n++)
             {
-                if(arr[i] % 2 == 0)
+                if(arr[i] % n == 0)
                 {
                     continue;
                 }
