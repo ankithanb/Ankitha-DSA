@@ -1,3 +1,4 @@
+package Strings;
 public class vowelsConso {
     public static void main(String[] args)
     {

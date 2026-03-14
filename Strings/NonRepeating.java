@@ -1,3 +1,4 @@
+package Strings;
 public class NonRepeating {
     public static void main(String[] args)
     {
