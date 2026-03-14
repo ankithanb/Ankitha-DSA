@@ -8,7 +8,7 @@ public class ProductArray {
         for(int i = 0; i < arr.length; i++)
         {
             int product = 1;
-            for(int j = 0; j < arr.length; j++)
+            for(int j = 0; j < arr.length; j++)       // time complexity is 0(n2).
             {
                 if(j == i)
                 {
