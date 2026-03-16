@@ -1,3 +1,4 @@
+// to get a missing number.
 package Array;
 public class missingNum {
     public static void main(String[] args)
