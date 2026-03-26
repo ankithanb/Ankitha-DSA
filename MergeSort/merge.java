@@ -12,21 +12,21 @@ public class merge {
     static int[] Merge(int[] first, int[] second)
     {
         int count1 = 0;
-        for(int i = 0; i < first.length; i++)
+        for(int i = 0; i < first.length; i++)        // If the first array having the 0 elements , then we have find only the valid elements.counting the valid numbers in the first array .. due to printing the 0 element at the end the result array.
         {
             if(first[i] == 0)
                 break;
             count1++;
         }
         int count2 = 0;
-        for(int j = 0; j < second.length; j++)
+        for(int j = 0; j < second.length; j++)       // If the second array having the 0 elements , then we have find only the valid elements.counting the valid numbers in the second array .. due to printing the 0 element at the end the result array.
         {
             if(second[j] == 0)
                 break;
             count2++;
         }
 
-        int[] mix = new int[count1 + count2];
+        int[] mix = new int[count1 + count2];       // here we give the valid arrays's size.
 
         int i = 0, j = 0, k = 0;
 
