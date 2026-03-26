@@ -1,3 +1,4 @@
+// sorting the array elements.
 package MergeSort;
 import java.util.Arrays;
 public class sort {
