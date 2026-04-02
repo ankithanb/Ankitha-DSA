@@ -1,3 +1,5 @@
+//This problem means, count the smaller elements after itself.
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
