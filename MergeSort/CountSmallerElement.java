@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class CountSmallerElement {
     public static void main(String[] args)
     {
-        int[] arr = {5,2,6,1};
+        int[] arr = {-1,-1};
         int[] result = Count(arr);
         System.out.println(Arrays.toString(result));
     }
@@ -14,18 +14,16 @@ public class CountSmallerElement {
         ArrayList<Integer> List = new ArrayList<>();
         for(int i = 0; i < arr.length; i++)
         {
+            int count = 0;
             for(int j = i+1; j < arr.length; j++)
             {
                 if(arr[i] > arr[j])
                 {
-                    List.add(arr[j]);
-                    break;
+                    count++;
                 }
             }
+            List.add(count);
         }
-        if(arr[arr.length - 1] == 1)
-            List.add(0);
-        
         int[] result = new int[List.size()];
         for(int i = 0; i < List.size(); i++)
         {
