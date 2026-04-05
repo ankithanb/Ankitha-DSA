@@ -15,6 +15,7 @@ public class MissingNo {
 
         ArrayList<Integer> result = Missing(arr);
         System.out.println(result);
+        sc.close();
     }
 
     static ArrayList<Integer>  Missing(int[] arr)

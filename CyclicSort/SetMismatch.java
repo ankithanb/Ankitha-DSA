@@ -15,6 +15,7 @@ public class SetMismatch {
         }
 
         System.out.println(Arrays.toString(Mismatch(arr)));
+        sc.close();
     }
 
     static int[] Mismatch(int[] arr)

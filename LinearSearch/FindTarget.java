@@ -18,6 +18,7 @@ public class FindTarget {
 
         int result = Target(arr,start,end, target);
         System.out.println(result);
+        sc.close();
     }
 
     static int Target(int[] arr, int start, int end, int target)

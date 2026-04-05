@@ -13,6 +13,7 @@ public class Sorting {
         }
         sort(arr);
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 
     static void sort(int[] arr)

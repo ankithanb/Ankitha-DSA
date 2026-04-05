@@ -17,6 +17,7 @@ public class Duplicate {
         }
 
         System.out.println(duplicate(arr));
+        sc.close();
     }
 
     static int duplicate(int[] arr)

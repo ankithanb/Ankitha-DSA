@@ -19,6 +19,7 @@ public class DisappearNo {
         // OR
 
         System.out.println(notVisible(arr));
+        sc.close();
     }
 
     static ArrayList<Integer> notVisible(int[] arr)

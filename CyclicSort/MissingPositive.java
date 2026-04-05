@@ -15,6 +15,7 @@ public class MissingPositive {
         }
 
         System.out.println(Positive(arr));
+        sc.close();
     }
 
     static int Positive(int[] arr)
