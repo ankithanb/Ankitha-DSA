@@ -28,5 +28,5 @@ public class MaxNum {
 
 
 // Description..
-//it's time complexity is O(n2) Quadratic,, because here we used nested loop ..
+//it's time complexity is O(n^2) Quadratic,, because here we used nested loop ..
 //this time complexity is so verst.. compare to others.
