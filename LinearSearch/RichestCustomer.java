@@ -28,3 +28,4 @@ public class RichestCustomer {
 }
 
 // in this ,, we have to find highest sum by calculating each row total sum..
+// Time complexity is O(n^2) Quadratic , because we used nested loop.
