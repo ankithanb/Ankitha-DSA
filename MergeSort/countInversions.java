@@ -53,26 +53,22 @@ public class countInversions {
         int a = 0;
         while(i < first.length)
         {
-            {
-            if(first[a] > first[i-1])
+            if(first[a] > first[i])
             {
                 count++;
             }
             i++;
-        }
-        a++;
+            a++;
         }
         int b = 0;
         while(j < second.length)
         {
-            {
-            if(second[b] > second[j-1])
+            if(second[b] > second[j])
             {
                 count++;
             }
             j++;
-        }
-        b++;
+            b++;
         }
 
         int m = 0, n = 0;
