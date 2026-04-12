@@ -1,7 +1,6 @@
 // this is a program to find the first and last position of the target element.
 // Time complexity is O(log n) Logerthemic for binary search.
 
-
 package BinarySearch;
 
 import java.util.Scanner;
