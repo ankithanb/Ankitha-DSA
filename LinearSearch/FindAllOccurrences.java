@@ -16,6 +16,7 @@ public class FindAllOccurrences {
 
         ArrayList<Integer> Res = Search(arr,target);
         System.out.println(Res);
+        sc.close();
     }
 
     static ArrayList<Integer> Search(int[] arr, int target)

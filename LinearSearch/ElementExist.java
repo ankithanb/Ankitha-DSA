@@ -15,6 +15,7 @@ public class ElementExist {
         char target = 'a';
         boolean isFound = Search(letter, target);
         System.out.println(isFound);
+        sc.close();
     }
 
     static boolean Search(char[] letter, char target)
