@@ -1,3 +1,24 @@
+// this is a program to find : how to find the maximum area using range expansion and monotonic stacks.
+// Algorithm :
+// Create a empty stack.
+// Maxarea = 0.
+// for each element :
+//      find currentHeight, i == n ? 0 : heights[i].
+//      while stack not empty AND current height < height at stack top
+//          find height = heights[stack.pop()];
+//          find boundaries :
+//              right = i.
+//              left = stack.peek() or -1.
+//          find width = right - left - 1.
+//          area = height × width
+//          maxArea = max(maxArea, area)
+//          push the index value into the stack.
+// return the maxArea.
+
+// Time complexity : O(n).
+// Space complexity : O(n).
+
+
 package Stack;
 
 import java.util.Scanner;
