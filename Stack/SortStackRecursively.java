@@ -25,9 +25,6 @@ public class SortStackRecursively {
         Sort(stack);
         Insert(stack, temp);
     }
-
-
-
     public static void main(String[] args)
     {
         Stack<Integer> stack = new Stack<>();
