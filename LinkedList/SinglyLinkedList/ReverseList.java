@@ -1,9 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
 public class ReverseList {
-    
-
-    class LinkedList
+    class LinkedList                        // we have to declare a class with static keyword, otherwise we have to initialize the outer object.
     {
         class Node{
             int data;
@@ -64,7 +62,7 @@ public class ReverseList {
     }
     public static void main(String[] args)
     {
-        ReverseList r = new ReverseList();
+        ReverseList r = new ReverseList();              // when we dont declare a class with static keyword in the LinkedList,, then we have to initialize a object of ReverseList.
         LinkedList list = r.new LinkedList();
 
         list.insertFirst(10);

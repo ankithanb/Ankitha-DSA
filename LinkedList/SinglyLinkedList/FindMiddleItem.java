@@ -1,7 +1,10 @@
+// this is a program to find the middle element of the given linked list.
+
+
 package LinkedList.SinglyLinkedList;
 
 public class FindMiddleItem {
-    static class LinkedList{
+    static class LinkedList{                 // we have to declare a class with static keyword, otherwise we have to initialize the outer object.
         class Node{
             int data;
             Node next;

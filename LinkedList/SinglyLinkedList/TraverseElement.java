@@ -1,9 +1,14 @@
-package LinkedList.SinglyLinkedList;
+// this is a program to print the elements in the linked list.
+// Algorithm :
+// first we have to insert the elements into the list.
+// display all the values inserted in the list by using while loop.
 
-    
+
+package LinkedList.SinglyLinkedList;
+ 
 public class TraverseElement {
 
-    class TraversList{
+    class TraversList{                           // we have to declare a class with static keyword, otherwise we have to initialize the outer object.
         class Node{
             int data;
             Node next;
@@ -46,8 +51,9 @@ public class TraverseElement {
     }
     public static void main(String[] args)
     {
-        TraverseElement t = new TraverseElement();
+        TraverseElement t = new TraverseElement();              // when we dont declare a class with static keyword in the LinkedList,, then we have to initialize a object of ReverseList.
         TraversList list = t.new TraversList();
+
         list.insertFirst(10);
         list.insertFirst(20);
         list.insertFirst(30);

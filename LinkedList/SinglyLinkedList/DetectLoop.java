@@ -1,7 +1,9 @@
+
+
 package LinkedList.SinglyLinkedList;
 
 public class DetectLoop {
-    static class LinkedList{
+    static class LinkedList{                 // we have to declare a class with static keyword, otherwise we have to initialize the outer object.
         class Node{
             int data;
             Node next;
@@ -72,7 +74,7 @@ public class DetectLoop {
 
     public static void main(String[] args)
     {
-        LinkedList list = new LinkedList();
+        LinkedList list = new LinkedList();             // when we dont declare a class with static keyword in the LinkedList,, then we have to initialize a object of ReverseList.
 
         list.insertFirst(10);
         list.insertFirst(20);

@@ -1,7 +1,10 @@
+// this is a program to search the element in a given linked list.
+
+
 package LinkedList.SinglyLinkedList;
 
 public class SearchElement {
-    class LinkedList{
+    class LinkedList{                        // we have to declare a class with static keyword, otherwise we have to initialize the outer object.
         class Node{
             int data;
             Node next;
@@ -48,7 +51,7 @@ public class SearchElement {
 
     public static void main(String[] args)
     {
-        SearchElement S = new SearchElement();
+        SearchElement S = new SearchElement();                  // when we dont declare a class with static keyword in the LinkedList,, then we have to initialize a object of ReverseList.
         LinkedList list = S.new LinkedList();
 
         list.insertFirst(10);
