@@ -75,7 +75,7 @@ public class BasicFunctions {
             size++;
         }
 
-        public void display()
+        public void display()  
         {
             Node temp = head;
             while(temp != null)

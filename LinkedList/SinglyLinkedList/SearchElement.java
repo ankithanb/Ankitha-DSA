@@ -1,14 +1,11 @@
 package LinkedList.SinglyLinkedList;
 
-public class ReverseList {
-    
-
-    class LinkedList
-    {
+public class SearchElement {
+    class LinkedList{
         class Node{
             int data;
             Node next;
-    
+
             Node(int data)
             {
                 this.data = data;
@@ -16,12 +13,10 @@ public class ReverseList {
             }
         }
 
-
-
         Node head = null;
         Node tail = null;
         int size = 0;
-
+        
         public void insertFirst(int val)
         {
             Node node = new Node(val);
@@ -35,47 +30,35 @@ public class ReverseList {
             size++;
         }
 
-        public void display()
+        public boolean Search(int value)
         {
             Node temp = head;
+
             while(temp != null)
             {
-                System.out.print(temp.data +" -> ");
+                if(temp.data == value)
+                {
+                    return true;
+                }
                 temp = temp.next;
             }
-            System.out.println("End");
-        }
-
-        public void reverseList() {
-            Node prev = null;
-            Node curr = head;
-        
-            while (curr != null) {
-                Node next = curr.next;          // store the next value.
-                curr.next = prev;               // store the prev value.
-                prev = curr;                    // assign current value.
-                curr = next;                    // assign next value.
-            }
-        
-            Node temp = head;
-            head = prev;
-            tail = temp;
+            return false;
         }
     }
+
     public static void main(String[] args)
     {
-        ReverseList r = new ReverseList();
-        LinkedList list = r.new LinkedList();
+        SearchElement S = new SearchElement();
+        LinkedList list = S.new LinkedList();
 
         list.insertFirst(10);
         list.insertFirst(20);
         list.insertFirst(30);
         list.insertFirst(40);
 
-        list.display();
+        boolean Str = list.Search( 110);
 
-        list.reverseList();
-        list.display();;
+        System.out.println(Str);
 
     }
 }
