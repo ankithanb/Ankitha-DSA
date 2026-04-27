@@ -54,7 +54,9 @@ public class ReverseList {
                 prev = curr;                    // assign current value.
                 curr = next;                    // assign next value.
             }
-        
+            
+            //return prev;                      // this only we write in the leeetcode reverse problem.
+            
             Node temp = head;
             head = prev;
             tail = temp;
