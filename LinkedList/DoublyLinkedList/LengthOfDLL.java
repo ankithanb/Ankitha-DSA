@@ -1,12 +1,6 @@
-// this is a program to print the element of the list in reverse order.
-// first, pointer assign to the tail.
-// second, using while loop, traverse the element from tail to head using the prev pointer.
-// third, print the traversed element.
-
-
 package LinkedList.DoublyLinkedList;
 
-public class ReverseDLL {
+public class LengthOfDLL {
     static class LinkedList{
         class ListNode{
             int data;
@@ -19,49 +13,38 @@ public class ReverseDLL {
         }
         
         ListNode head = null;
-        ListNode prev = null;
         ListNode tail = null;
+        ListNode prev = null;
         int size = 0;
 
-        public void insertFirst(int val)                // insert first block.
+        public void insertFirst(int val)                    // this part is insert at First.
         {
             ListNode node = new ListNode(val);
+
             if(head == null)
             {
                 head = tail = node;
                 return;
             }
-
             node.next = head;
             head.prev = node;
+            
             head = node;
             size++;
         }
 
-        public void Reverse()                           // Reverse block.
-        {
-            ListNode temp = tail;
-
-            while(temp != null)
-            {
-                System.out.print(temp.data+" <=> ");
-                temp = temp.prev;
-            }
-            System.out.println("Start");
-        }
-
-        public void display()                           // Display block.
+        public int count()
         {
             ListNode temp = head;
+            int count = 0;
             while(temp != null)
             {
-                System.out.print(temp.data+" <=> ");
+                count++;
                 temp = temp.next;
             }
-            System.out.println("null");
+            return count;
         }
-        
-    } 
+    }
 
     public static void main(String[] args)
     {
@@ -71,9 +54,12 @@ public class ReverseDLL {
         list.insertFirst(20);
         list.insertFirst(30);
         list.insertFirst(40);
+        list.insertFirst(50);
+        list.insertFirst(60);
+        list.insertFirst(70);
 
-        list.display();
+        int result = list.count();
 
-        list.Reverse();
+        System.out.println(result);
     }
 }
