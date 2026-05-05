@@ -1,6 +1,6 @@
 package LinkedList.DoublyLinkedList;
 
-public class ForwordBackword {
+public class ForwardBackward {
     static class LinkedList{
         class ListNode{
             int data;
@@ -31,7 +31,7 @@ public class ForwordBackword {
             size++;
         }
 
-        public void displayForword()
+        public void displayForward()
         {
             ListNode temp = head;
             while(temp != null)
@@ -42,7 +42,7 @@ public class ForwordBackword {
             System.out.println("Null");
         }
 
-        public void displayBackword()
+        public void displayBackward()
         {
             ListNode temp = tail;
             while(temp != null)
@@ -63,8 +63,8 @@ public class ForwordBackword {
         list.insertFirst(30);
         list.insertFirst(40);
 
-        list.displayForword();
+        list.displayForward();
 
-        list.displayBackword();
+        list.displayBackward();
     }
 }

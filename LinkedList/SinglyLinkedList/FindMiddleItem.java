@@ -1,6 +1,5 @@
 // this is a program to find the middle element of the given linked list.
 
-
 package LinkedList.SinglyLinkedList;
 
 public class FindMiddleItem {
