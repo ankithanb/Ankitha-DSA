@@ -87,7 +87,7 @@ public class DeleteAllOccurances {
         list.insertFirst(20);
         list.insertFirst(50);
 
-        list.DeleteOccurances(20);
+        list.DeleteOccurances(50);
         list.display();
     }
 }

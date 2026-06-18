@@ -20,11 +20,13 @@ public class ImplementUsingLL {
             if(rear == null)
             {
                 front = rear = temp;
+                System.out.print(rear.data + " ");
                 return;
             }
 
             rear.next = temp;
             rear = temp;
+            System.out.print(rear.data + " ");
         }
 
         void Dequeue()
@@ -34,7 +36,7 @@ public class ImplementUsingLL {
                 System.out.println("Empty");
                 return;
             }
-            System.out.println(front.data);
+            System.out.print(front.data + " ");
             front = front.next;
 
             if(front == null)
@@ -51,6 +53,13 @@ public class ImplementUsingLL {
         q.Enqueue(20);
         q.Enqueue(30);
 
+        System.out.println();
+
         q.Dequeue();
+        q.Dequeue();
+
+        System.out.println();
+        
+        q.Enqueue(40);
     }
 }
