@@ -34,6 +34,10 @@ public class FindMiddleItem {
 
         public Node Middle()
         {
+            if(head == null || head.next == null)
+            {
+                return head;
+            }
             Node fast = head;
             Node slow = head;
 
