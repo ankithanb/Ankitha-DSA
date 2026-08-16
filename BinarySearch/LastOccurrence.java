@@ -19,6 +19,7 @@ public class LastOccurrence {
         int end = Search(arr, target, false);             // this is the main thing in this program.
 
         System.out.println(end);
+        sc.close();
     }
 
     static int Search(int[] arr, int target, boolean LastOccurre)

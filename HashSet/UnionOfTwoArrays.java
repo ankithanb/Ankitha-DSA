@@ -3,7 +3,7 @@ import java.util.HashSet;
 public class UnionOfTwoArrays {
     public static void main(String[] args)
     {
-        int[] arr1 = {1,2,3,4};
+        int[] arr1 = {1,2,3,4,7,8};
         int[] arr2 = {5,6,3,2};
 
         HashSet<Integer> set = new HashSet<>();

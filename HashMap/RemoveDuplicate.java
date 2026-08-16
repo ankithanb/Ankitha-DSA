@@ -7,7 +7,19 @@ public class RemoveDuplicate {
 
         HashMap<Integer, Boolean> map = new HashMap<>();
 
-        // for(int num : arr)
+        for(int num : arr)
+        {
+            if(!map.containsKey(num))
+            {
+                map.put(num, true);
+                System.out.print(num+" ");
+            }
+        }
+    }
+}
+
+
+// for(int num : arr)
         // {
         //     map.put(num, map.getOrDefault(num, 0) + 1);
         // }
@@ -24,15 +36,3 @@ public class RemoveDuplicate {
         // {
         //     System.out.print(num+" ");
         // }
-
-        for(int num : arr)
-        {
-            if(!map.containsKey(num))
-            {
-                map.put(num, true);
-                System.out.print(num+" ");
-            }
-
-        }
-    }
-}

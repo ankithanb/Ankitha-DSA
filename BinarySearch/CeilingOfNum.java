@@ -21,6 +21,7 @@ public class CeilingOfNum {
 
         int target = sc.nextInt();
         System.out.println(Search(arr, target));
+        sc.close();
     }
 
     static int Search(int[] arr, int target)

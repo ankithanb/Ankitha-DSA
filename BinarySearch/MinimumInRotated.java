@@ -13,6 +13,7 @@ public class MinimumInRotated {
             arr[i] = sc.nextInt();
         }
         System.out.println(Minimum(arr));
+        sc.close();
     }
 
     static int Minimum(int[] arr)

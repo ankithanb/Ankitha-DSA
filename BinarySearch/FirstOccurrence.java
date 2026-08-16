@@ -19,6 +19,7 @@ public class FirstOccurrence {
         int start = Search(arr, target, true);                      // this is main thing in this program.
 
         System.out.println(start);
+        sc.close();
     }
 
     static int Search(int[] arr, int target, boolean FirstOccurre)

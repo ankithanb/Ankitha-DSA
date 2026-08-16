@@ -7,18 +7,24 @@ public class primeNumInRange {
         int i = 0;
         while(i < arr.length)
         {
+            boolean isPrime = true;
             if(arr[i] <= 1)
             {
+                i++;
                 continue;
             }
             for(int n = 2; n <= arr[i] / 2; n++)
             {
                 if(arr[i] % n == 0)
                 {
-                    continue;
+                    isPrime = false;
+                    break;
                 }
             }
-            System.out.println(arr[i]);
+
+            if(isPrime)
+                System.out.print(arr[i]+" ");
+            i++;
         }
     }
 }

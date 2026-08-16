@@ -1,6 +1,6 @@
 package HashMap;
-import java.util.HashMap; 
-
+//import java.util.HashMap; 
+import java.util.Arrays;
 public class Anagram {
     public static void main(String[] args)
     {
@@ -51,34 +51,65 @@ public class Anagram {
     //     return true;
     // }
 
-    static boolean Anagrams(String str1, String str2) 
+    // static boolean Anagrams(String str1, String str2) 
+    // {
+    //     if(str1.length() != str2.length()) 
+    //     {
+    //         return false;
+    //     }
+
+    //     HashMap<Character, Integer> map = new HashMap<>();
+
+    //     for(char ch : str1.toCharArray())
+    //     {
+    //         map.put(ch, map.getOrDefault(ch, 0) + 1);
+    //     }
+
+    //     for(char ch : str2.toCharArray())
+    //     {
+    //         if(!map.containsKey(ch)) 
+    //         {
+    //             return false;
+    //         }
+    //         map.put(ch, map.get(ch) - 1);
+
+    //         if(map.get(ch) == 0)
+    //         {
+    //             map.remove(ch);
+    //         }
+    //     }
+        
+    //     return map.isEmpty();
+    // }
+
+    static boolean Anagrams(String str1, String str2)
     {
-        if(str1.length() != str2.length()) 
+        if(str1.length() != str2.length())
         {
             return false;
         }
 
-        HashMap<Character, Integer> map = new HashMap<>();
+        char[] ch1 = str1.toLowerCase().toCharArray();
+        char[] ch2 = str2.toLowerCase().toCharArray();
 
-        for(char ch : str1.toCharArray())
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+
+        System.out.println(ch1);
+        System.out.println(ch2);
+
+        String s = new String(ch1);
+        String t = new String(ch2);
+
+        if(s.equals(t))
         {
-            map.put(ch, map.getOrDefault(ch, 0) + 1);
+            return true;
         }
-
-        for(char ch : str2.toCharArray())
-        {
-            if(!map.containsKey(ch)) 
-            {
-                return false;
-            }
-            map.put(ch, map.get(ch) - 1);
-
-            if(map.get(ch) == 0)
-            {
-                map.remove(ch);
-            }
-        }
-        
-        return map.isEmpty();
+        return false;
+        // if(ch1 == ch2)
+        // {
+        //     return true;
+        // }
+        // return false;
     }
 }

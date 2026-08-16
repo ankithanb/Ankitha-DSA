@@ -28,6 +28,7 @@ public class FirstNLastPosition {
         ans[1] = end;                                          // when we found the last index of the target , we have assign it in ans[1].
         
         System.out.println(Arrays.toString(ans));
+        sc.close();
     }
 
     static int Position(int[] arr, int target, boolean findIndex)
