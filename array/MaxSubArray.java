@@ -1,3 +1,8 @@
+Given an integer array arr, find the maximum sum of a contiguous subarray (a sequence of consecutive elements) within the array.
+
+input : arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+output : 6
+    
 package Array;
 
 public class MaxSubArray {
